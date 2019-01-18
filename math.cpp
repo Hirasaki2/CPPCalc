@@ -1,55 +1,71 @@
 #include <math.h>
 #include <iostream>
-#include <limits>
-
+#define PI 3.14159265
 using namespace std;
+
+//Declare Functions
 double calcVector();
 double calcMagnitude();
 void menuMagnitude();
 void menuVector();
 void menu();
-void PressEnterToContinue();
 
 int main() {
-	int restart = 1;
-	while (restart == 1) {
+	bool restart = true;
+	while (restart == true) {
 		int answer;
-		cout << endl << "Choose a option!\n0. Exit\n1. Magnitude";
+		cout << "Choose a option!\n0. Exit\n1. Magnitude\n2. Vector";
 		cout << endl << "Choice: ";
-		cin >> answer;
-		if (answer == 0) {
-			restart = 0;
+		if (cin >> answer) {
+			if (answer == 0) {
+				restart = false;
+			}
+			else if (answer == 1) {
+				menuMagnitude();
+			}
+			else if (answer == 2) {
+				menuVector();
+			}
 		}
-		else if (answer == 1) {
-			menuMagnitude();
+		else {
+			return 1;
 		}
 	}
 	return 0;
 }
-void PressEnterToContinue(){
-	cout << endl << "Press ENTER to continue... ";
-	system("read");    // On *Nix
-
-}
-
 double calcMagnitude(double x1, double y1, double x2, double y2) {
 	double xPower = pow (x2 - x1, 2);
 	double yPower = pow (y2 - y1, 2);
 	
-	double finalAnswer = sqrt (xPower + yPower);
-	return finalAnswer;
+	return (double) sqrt (xPower + yPower);
 }
-
-double calcVector() {
-	return 0;
+double calcVector(double x1, double y1, double x2, double y2) {
+	double diffX = x1 + x2;
+	double diffY = y1 + y2;
+	
+	return (double) atan (diffY / diffX) * 180 / PI;
 }
-void menuMagnitude(){
+double doubleCout(string lol) {
+	double var;
+	cout << lol;
+	cin >> var;
+	return var;
+}
+void menuMagnitude() {
 	double x1, x2, y1, y2;
-	cout << "X1: ";	cin >> x1;
-	cout << "X2: ";	cin >> x2;
-	cout << "Y1: ";	cin >> y1;
-	cout << "Y2: ";	cin >> y2;
-	cout << calcMagnitude(x1, x2, y1, y2);
-	PressEnterToContinue();
+	x1 = doubleCout("x1: ");
+	y1 = doubleCout("y1: ");
+	x2 = doubleCout("x2: ");
+	y2 = doubleCout("y2: ");
+	cout << calcMagnitude(x1, y1, x2, y2) << endl;
+	return;
+}
+void menuVector() {
+	double x1, x2, y1, y2;
+	x1 = doubleCout("x1: ");
+	x2 = doubleCout("y1: ");
+	y1 = doubleCout("x2: ");
+	y2 = doubleCout("y2: ");
+	cout << calcVector(x1, y1, x2, y2) << endl;
 	return;
 }
