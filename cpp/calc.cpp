@@ -7,5 +7,5 @@ double calcMagnitude(double x1, double y1) {
 	return (double) sqrt (xPower + yPower);
 }
 double calcVector(double x, double y) {
-	return (double) atan (y / x) * 180 / M_PI;
+	return (double) ( atan (y / x) * 180 ) / M_PI;
 }
