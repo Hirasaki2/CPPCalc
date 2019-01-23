@@ -2,6 +2,10 @@
 #include "../headers/calc.h"
 
 using namespace std;
+
+const string magnitude = "Magnitude: ";
+const string vector = "Vector: ";
+
 double doubleCout(string lol) {
 	double var;
 	cout << lol;
@@ -13,20 +17,20 @@ void menuMagnitude() {
 	x = doubleCout("x: ");
 	y = doubleCout("y: ");
 	cout << endl;
-	cout << calcMagnitude(x, y) << endl;
+	cout << magnitude << calcMagnitude(x, y) << endl;
 }
 void menuVector() {
 	double x, y;
 	x = doubleCout("x: ");
 	y = doubleCout("y: ");
 	cout << endl;
-	cout << calcVector(x, y) << endl;
+	cout << vector << calcVector(x, y) << endl;
 }
 void menuBoth() {
 	double x, y;
 	x = doubleCout("x: ");
 	y = doubleCout("y: ");
 	cout << endl;
-	cout << "Magnitude: " << calcMagnitude(x, y) << endl;
-	cout << "Vector: " << calcVector(x, y) << endl;
+	cout << magnitude << calcMagnitude(x, y) << endl;
+	cout << vector << calcVector(x, y) << endl;
 }
