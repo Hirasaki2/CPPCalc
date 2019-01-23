@@ -1,6 +1,6 @@
 # build an executable named myprog from myprog.c
-all: math.cpp menu.cpp calc.cpp 
-	g++ -g -Wall -o math math.cpp
+all: math.cpp cpp/*.cpp 
+	g++ -g -Wall math.cpp cpp/*.cpp -o math
 
 clean: 
 	$(RM) math
