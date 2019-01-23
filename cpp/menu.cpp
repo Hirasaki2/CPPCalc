@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../cpp/headers/calc.h"
+#include "../headers/calc.h"
 
 using namespace std;
 double doubleCout(string lol) {

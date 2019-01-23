@@ -1,6 +1,6 @@
 #include <iostream>
-#include "cpp/headers/calc.h"
-#include "cpp/headers/menu.h"
+#include "headers/calc.h"
+#include "headers/menu.h"
 using namespace std;
 
 //Declare Functions
