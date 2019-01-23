@@ -23,6 +23,6 @@ void menuVector() {
 	x2 = doubleCout("y1: ");
 	y1 = doubleCout("x2: ");
 	y2 = doubleCout("y2: ");
-	cout << calcVector(x1, y1, x2, y2) << endl;
+	cout << "BROKEN " << calcVector(x1, y1, x2, y2) << endl;
 	return;
 }
