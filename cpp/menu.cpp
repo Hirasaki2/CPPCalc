@@ -9,20 +9,16 @@ double doubleCout(string lol) {
 	return var;
 }
 void menuMagnitude() {
-	double x1, x2, y1, y2;
-	x1 = doubleCout("x1: ");
-	y1 = doubleCout("y1: ");
-	x2 = doubleCout("x2: ");
-	y2 = doubleCout("y2: ");
-	cout << calcMagnitude(x1, y1, x2, y2) << endl;
+	double x, y;
+	x = doubleCout("x: ");
+	y = doubleCout("y: ");
+	cout << calcMagnitude(x, y) << endl;
 	return;
 }
 void menuVector() {
-	double x1, x2, y1, y2;
-	x1 = doubleCout("x1: ");
-	x2 = doubleCout("y1: ");
-	y1 = doubleCout("x2: ");
-	y2 = doubleCout("y2: ");
-	cout << "BROKEN " << calcVector(x1, y1, x2, y2) << endl;
+	double x, y;
+	x = doubleCout("x: ");
+	y = doubleCout("y: ");
+	cout << calcVector(x, y) << endl;
 	return;
 }
