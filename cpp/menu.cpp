@@ -12,20 +12,6 @@ double doubleCout(string lol) {
 	cin >> var;
 	return var;
 }
-void menuMagnitude() {
-	double x, y;
-	x = doubleCout("x: ");
-	y = doubleCout("y: ");
-	cout << endl;
-	cout << magnitude << calcMagnitude(x, y) << endl;
-}
-void menuVector() {
-	double x, y;
-	x = doubleCout("x: ");
-	y = doubleCout("y: ");
-	cout << endl;
-	cout << vector << calcVector(x, y) << endl;
-}
 void menuBoth() {
 	double x, y;
 	x = doubleCout("x: ");
@@ -33,4 +19,13 @@ void menuBoth() {
 	cout << endl;
 	cout << magnitude << calcMagnitude(x, y) << endl;
 	cout << vector << calcVector(x, y) << endl;
+}
+void menuXY() {
+	double magnitudeVar, vectorVar;
+	magnitudeVar = doubleCout(magnitude);
+	vectorVar = doubleCout(vector);
+	cout << endl;
+	cout << "x: " << calcX(magnitudeVar, vectorVar) << endl;
+	cout << "y: " << calcY(magnitudeVar, vectorVar) << endl;
+
 }

@@ -5,5 +5,7 @@
 // This is the content of the .h file, which is where the declarations go
 double calcMagnitude(double x, double y);
 double calcVector(double x, double y);
+double calcX(double magnitude, double vector);
+double calcY(double magnitude, double vector);
 // This is the end of the header guard
 #endif

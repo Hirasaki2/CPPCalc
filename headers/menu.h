@@ -7,8 +7,7 @@
 int add(int x, int y); // function prototype for add.h -- don't forget the semicolon!
  
 double doubleCout(std::string lol);
-void menuMagnitude();
-void menuVector();
 void menuBoth();
+void menuXY();
 // This is the end of the header guard
 #endif

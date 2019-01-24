@@ -8,7 +8,7 @@ int main() {
 	bool restart = true;
 	while (restart == true) {
 		int answer;
-		cout << "Choose a option!\n 0. Exit\n 1. Magnitude\n 2. Vector\n 3. Magnitude + Vector";
+		cout << "Choose a option!\n 0. Exit\n 1. Magnitude + Vector\n 2. X + Y";
 		cout << endl << "Choice: ";
 		if (cin >> answer) {
 			if (answer == 0) {
@@ -17,13 +17,10 @@ int main() {
 			else {
 				cout << endl;
 				if (answer == 1) {
-					menuMagnitude();
+					menuBoth();
 				}
 				else if (answer == 2) {
-					menuVector();
-				}
-				else if (answer == 3) {
-					menuBoth();
+					menuXY();
 				}
 				else {
 					
