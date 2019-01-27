@@ -4,7 +4,7 @@
 using namespace std;
 
 //Declare Functions
-int main() {
+int main(int argc, char *argv[]) {
 	bool restart = true;
 	while (restart == true) {
 		int answer;
