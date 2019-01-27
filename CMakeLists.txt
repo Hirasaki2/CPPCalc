@@ -5,6 +5,6 @@ include_directories(include)
 
 file(GLOB SOURCES "src/*.cpp")
 
-add_executable(math ${SOURCES})
+add_executable(cppmath ${SOURCES})
 
-install(TARGETS math DESTINATION /usr/local/bin) 
+install(TARGETS cppmath DESTINATION /usr/local/bin) 
