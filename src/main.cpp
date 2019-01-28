@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
 	if (argc == 1) {
 		while (restart == true) {
 			int answer;
-			std::cout << "Choose a option!\n 0. Exit\n 1. Magnitude + Vector\n 2. X + Y\n";
+			std::cout << "Choose a option!\n 0. Exit\n 1. Find Magnitude & Vector\n 2. Find X & Y\n";
 			std::cout << "Choice: ";
 			if (std::cin >> answer) {
 				if (answer == 0) {
