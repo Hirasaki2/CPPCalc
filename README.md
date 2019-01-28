@@ -13,7 +13,7 @@ make
 Run the executable
 
 ```
-./cmake
+./cppcalc
 ```
 
 Choose the option by inserting the proper value
